@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Backdrop from "./UI/Backdrop";
+import Description from "./UI/Description";
+import Header from "./UI/Header";
+import Items from "./Items/Items";
 
 function App() {
   return (
-    <div>
-      Tailwind test
-    </div>
+    <>
+      <Backdrop></Backdrop>
+      <Header></Header>
+      <Description></Description>
+      <Items></Items>
+    </>
   );
 }
 
