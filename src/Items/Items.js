@@ -14,7 +14,7 @@ const foodItems = [
   },
   {
     name: "Bibimbap",
-    description: "Korean rice, veggies and egg spicy bowl",
+    description: "Spicy korean rice, veggies and eggs",
     price: 22.99,
   },
   {
