@@ -1,5 +1,12 @@
+import React, { useContext, useState } from "react";
+import FoodContext from "../Context/food-context";
+
 const ItemsAmount = () => {
-  const amountHandler = () => {};
+  const [amount, setAmount] = useState(0);
+
+  const addHandler = () => {
+    setAmount(amount + 1);
+  };
 
   return (
     <div className="flex flex-col content-end">
@@ -7,11 +14,11 @@ const ItemsAmount = () => {
       <input
         type="number"
         step="1"
-        value="0"
+        value={amount}
         className="w-6 h-6"
-        onChange={amountHandler}
+        onChange={() => {}}
       ></input>
-      <button>+ Add</button>
+      <button onClick={addHandler}>+ Add</button>
     </div>
   );
 };
